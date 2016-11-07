@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*-----------------------*/
+@-webkit-keyframes show {
+    from {
+        transform: translate(0,-400px);
+        opacity:0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity:1;
+    }
+}
+
+.oas_froum_alert_mask {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity:70);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.oas_froum_alert {
+    width: 307px;
+    height: 159px;
+    border: 1px solid #777474;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -154px;
+    margin-top: -80px;
+    color: #fff;
+    background: #000;
+    z-index: 3;
+    -webkit-animation: 0.5s show;
+}
+
+.oas_froum_alert_header {
+    float: left;
+    width: 100%;
+    height: 30px;
+}
+
+.oas_froum_alert_header h3 {
+    margin: 10px 0 0 10px;
+    float: left;
+}
+
+.oas_froum_alert_close {
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+    float: right;
+}
+
+.oas_froum_alert_content {
+    width: 280px;
+    text-align: center;
+    margin: 60px auto 0;
+    color: #ce822b;
+    word-wrap: break-word;
+}
+
+.oas_forum_alert_confirm {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 26px;
+}
+
+.oas_forum_alert_confirm span {
+    background: #ccc;
+    padding: 5px 10px;
+    margin: 0 5px;
+}

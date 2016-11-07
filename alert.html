@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/modal.css">
+</head>
+<body>
+<input type="button" value="modal" id="btn">
+<script src="js/jquery.js"></script>
+<script src="js/modal.js"></script>
+<script>
+    $('#btn').click(function(){
+        new Modal({
+            _confirmFn: function () {
+                alert(3);
+            },
+            _confirm: true,
+            timeout: false,
+            lang: {
+                title: '提示消息',
+                content: '你确定删除这条信息吗?',
+                cancle: '取消',
+                confirm: '确定'
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
