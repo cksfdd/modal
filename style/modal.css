@@ -39,7 +39,7 @@
     color: #fff;
     background: #000;
     z-index: 3;
-    -webkit-animation: 0.5s show;
+    -webkit-animation: show 0.3s ease;
 }
 
 .oas_froum_alert_header {
